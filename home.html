@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remas Portfolio</title>
+    <link rel="stylesheet" href="myws.css">
+</head>
+
+ <!-- Header Section -->
+ <header>
+    <a href="#home"><img src="logo3.png" width="140" height="80" alt="Logo" class="logo"></a>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+   
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <h1>I'm Remas</h1>
+            <div class="typing-effect" id="typing"></div>
+            <script>
+                const text = "UX/UI DESIGNER";
+                const typingElement = document.getElementById("typing");
+                let index = 0;
+
+                typingElement.style.fontSize = "65px";
+                typingElement.style.color = "#5d7899";
+
+                function type() {
+                    if (index < text.length) {
+                        typingElement.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, 100);
+                    }
+                }
+
+                type();
+            </script>
+            <p>“Where innovation meets intuition — crafting seamless experiences <br>
+                that bring technology to life through the art of Human-Computer Interaction.”
+            </p>
+            <img id="stic" src="ai1-Photoroom.png" width="500" height="250" alt="Sticker">
+            <a href="#aboutme"><button>Click Here</button></a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="aboutme" id="aboutme">
+            <h2>About Me</h2>
+            <p>I’m a dedicated UI designer passionate about crafting clean, functional, and user-focused designs. <br>I thrive on turning ideas into seamless experiences that inspire, connect, and deliver real value.<br> With a strong attention to detail and a creative mindset, I aim to make every project both beautiful and impactful.
+                ...</p>
+            <a href="#aboutme"><button>My CV</button></a>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-wrapper">
+                <span class="arrow" onclick="scrollLeft()">&lt;</span>
+                <div class="skills-content" id="skills-container">
+                    <!-- Add Your Skills Here -->
+                    <div class="skill">
+                        <img src="FIGMA.png" alt="Figma">
+                        <h3>Figma</h3>
+                        <p>97%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="html.png" alt="HTML5">
+                        <h3>HTML5</h3>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="css.png" alt="CSS3">
+                        <h3>CSS3</h3>
+                        <p>88%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="js.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill">
+                        <img src="sql.png" alt="SQL">
+                        <h3>SQL</h3>
+                        <p>88%</p>
+                    </div>
+                    
+                    <div class="skill">
+                        <img src="prt.png" alt="Persuasion Techniques">
+                        <h3>Persuasion Techniques</h3>
+                        <p>89%</p>
+                    </div>
+                </div>
+    
+                    <!-- Add more skills if needed -->
+                </div>
+                <span class="arrow" onclick="scrollRight()">&gt;</span>
+            </div>
+        </section>
+        
+        <script>
+            const container = document.getElementById("skills-container");
+        
+            function scrollLeft() {
+                container.scrollBy({
+                    left: -200, // Scroll left by 200 pixels
+                    behavior: 'smooth' // Smooth scrolling
+                });
+            }
+        
+            function scrollRight() {
+                container.scrollBy({
+                    left: 200, // Scroll right by 200 pixels
+                    behavior: 'smooth' // Smooth scrolling
+                });
+            }
+        </script>
+
+        <!-- Works Section -->
+         <section class="works" id="works">
+        <h2>Latest Work</h2>
+            <div class="work-grid">
+                <div class="work-item"><a href="watt.html">
+                    <img src="watt.png" alt="Watt">
+                    <div class="work-overlay">
+                        <h3>Watt</h3>
+                        <p>UI/UX for Smart Energy Tracking System app.</p>
+                    </div>
+                </a></div>
+
+                <div class="work-item"><a href="sea.html">
+                    <img src="sea.png" alt="Sustainable Environmental Awareness">
+                    <div class="work-overlay">
+                        <h3>Sustainable Environmental Awareness</h3>
+                        <p>Web development for awareness website.</p>
+                    </div>
+                </a></div>
+
+                <div class="work-item"><a href="Jarir.html">
+                    <img src="Jarir.png" alt="Redesign Jarir">
+                    <div class="work-overlay">
+                        <h3>Redesign Jarir</h3>
+                        <p>UI/UX for redesigned app.</p>
+                    </div>
+                </a></div>
+
+                <div class="work-item"><a href="rehlaa.html">
+                    <img src="Rehlaa (1).png" alt="Rehlaa">
+                    <div class="work-overlay">
+                        <h3>Rehlaa</h3>
+                        <p>UI/UX for booking and customizing trips app.</p>
+                    </div>
+                </a></div>
+
+                <div class="work-item"><a href="bavey.html">
+                    <img src="bavey.png" alt="Bavey Bakery">
+                    <div class="work-overlay">
+                        <h3>Bavey Bakery</h3>
+                        <p>Visual design for a bakery app.</p>
+                    </div>
+                </a></div>
+
+                <div class="work-item"><a href="ABAN.HTML">
+                    <img src ="iPhone 13 Pro.png" alt="aban">
+                    <div class="work-overlay">
+                    <h3>ABAN</h3>
+                    <p>UI for HAKATHON</p>
+                </div></a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Remas Portfolio. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/remas-safhi-600604275">LinkedIn</a> |
+            <a href="mailto:s444001001@uqu.edu.sa">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
